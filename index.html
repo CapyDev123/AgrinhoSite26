@@ -1,3 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">Agrinho 2026</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#tema" class="nav-link">Tema</a></li>
+                <li><a href="#pilares" class="nav-link">Pilares</a></li>
+                <li><a href="#interativo" class="nav-link">Explore</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Agro Forte<br><span class="highlight">Futuro Sustentável</span></h1>
+            <p class="hero-subtitle">Equilíbrio entre produção e meio ambiente</p>
+            <button class="cta-button" onclick="smoothScroll('tema')">Descubra Mais</button>
+        </div>
+        <div class="hero-background">
+            <div class="animated-plant"></div>
+            <div class="animated-sun"></div>
+        </div>
+    </section>
+
+    <!-- Seção Tema -->
+    <section id="tema" class="tema-section">
+        <div class="container">
+            <h2 class="section-title">O Tema 2026</h2>
+            <div class="tema-grid">
+                <div class="tema-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Práticas agrícolas que respeitam e preservam nossos recursos naturais para gerações futuras.</p>
+                </div>
+                <div class="tema-card">
+                    <div class="card-icon">🚜</div>
+                    <h3>Produção</h3>
+                    <p>Tecnologia e inovação para aumentar a eficiência e qualidade da produção agrícola.</p>
+                </div>
+                <div class="tema-card">
+                    <div class="card-icon">💚</div>
+                    <h3>Equilíbrio</h3>
+                    <p>Harmonia entre o desenvolvimento econômico e a conservação do meio ambiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Pilares -->
+    <section id="pilares" class="pilares-section">
+        <div class="container">
+            <h2 class="section-title">Os 4 Pilares do Agrinho</h2>
+            <div class="pilares-grid">
+                <div class="pilar-card">
+                    <div class="pilar-number">1</div>
+                    <h3>Solo Vivo</h3>
+                    <p>Proteção e recuperação da saúde do solo através de práticas conservacionistas e uso responsável de insumos.</p>
+                    <div class="pilar-icon">🌾</div>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-number">2</div>
+                    <h3>Água Pura</h3>
+                    <p>Gestão eficiente da água e proteção das bacias hidrográficas para um futuro com segurança hídrica.</p>
+                    <div class="pilar-icon">💧</div>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-number">3</div>
+                    <h3>Clima Estável</h3>
+                    <p>Redução de emissões de carbono e adaptação às mudanças climáticas com técnicas sustentáveis.</p>
+                    <div class="pilar-icon">☀️</div>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-number">4</div>
+                    <h3>Biodiversidade</h3>
+                    <p>Preservação da flora e fauna através de sistemas agrícolas que coexistem com a natureza.</p>
+                    <div class="pilar-icon">🦋</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Interativa -->
+    <section id="interativo" class="interativo-section">
+        <div class="container">
+            <h2 class="section-title">Sua Jornada Sustentável</h2>
+            <div class="interactive-container">
+                <div class="quiz-section">
+                    <h3>Teste Seus Conhecimentos</h3>
+                    <p id="quiz-question" class="quiz-question"></p>
+                    <div id="quiz-options" class="quiz-options"></div>
+                    <button id="next-btn" class="next-button" style="display: none;">Próxima Questão</button>
+                </div>
+                <div class="carbon-calculator">
+                    <h3>Calculadora de Impacto</h3>
+                    <p>Qual é o tamanho de sua propriedade?</p>
+                    <input type="range" id="area-slider" min="1" max="500" value="50" class="slider">
+                    <p id="area-display">50 hectares</p>
+                    <div class="impact-result">
+                        <p>Potencial de carbono neutralizado:</p>
+                        <p id="carbon-result" class="carbon-value">1.250 toneladas/ano</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Práticas -->
+    <section class="praticas-section">
+        <div class="container">
+            <h2 class="section-title">Práticas Recomendadas</h2>
+            <div class="praticas-container">
+                <div class="pratica-item">
+                    <h4>Plantio Direto</h4>
+                    <p>Reduz erosão, economiza combustível e melhora a qualidade do solo.</p>
+                </div>
+                <div class="pratica-item">
+                    <h4>Rotação de Culturas</h4>
+                    <p>Quebra ciclos de pragas e aumenta a fertilidade natural do solo.</p>
+                </div>
+                <div class="pratica-item">
+                    <h4>Conservação da Mata</h4>
+                    <p>Protege nascentes, reduz erosão e mantém a biodiversidade.</p>
+                </div>
+                <div class="pratica-item">
+                    <h4>Irrigação Eficiente</h4>
+                    <p>Uso inteligente da água com sistemas modernos e tecnológicos.</p>
+                </div>
+                <div class="pratica-item">
+                    <h4>Energia Renovável</h4>
+                    <p>Energia solar e eólica para reduzir dependência de combustíveis fósseis.</p>
+                </div>
+                <div class="pratica-item">
+                    <h4>Compostagem</h4>
+                    <p>Transforma resíduos em nutrientes valiosos para o solo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Inspiradora -->
+    <section class="galeria-section">
+        <div class="container">
+            <h2 class="section-title">Histórias de Inspiração</h2>
+            <div class="galeria-grid">
+                <div class="galeria-card">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Propriedade Regenerativa</h3>
+                    <p>Como uma fazenda familiar transformou sua produção em modelo sustentável de sucesso.</p>
+                </div>
+                <div class="galeria-card">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Inovação Tecnológica</h3>
+                    <p>Drones e IA revolucionam o monitoramento sustentável das plantações.</p>
+                </div>
+                <div class="galeria-card">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Comunidade em Ação</h3>
+                    <p>Pequenos agricultores se unem para implementar práticas sustentáveis coletivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato-section">
+        <div class="container">
+            <h2 class="section-title">Vamos Juntos!</h2>
+            <div class="contato-content">
+                <p>Faça parte do movimento por um agronegócio mais forte e sustentável.</p>
+                <form class="contato-form" id="contato-form">
+                    <input type="text" placeholder="Seu Nome" required class="form-input">
+                    <input type="email" placeholder="Seu Email" required class="form-input">
+                    <textarea placeholder="Sua Mensagem" required class="form-input"></textarea>
+                    <button type="submit" class="submit-button">Enviar Mensagem</button>
+                </form>
+                <div id="form-feedback" class="form-feedback"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Agrinho - Agro Forte, Futuro Sustentável. Construindo um mundo melhor juntos.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">📱</a>
+                <a href="#" class="social-icon">📧</a>
+                <a href="#" class="social-icon">🌐</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 <!doctype html>
 <html lang="en">
   <head>
